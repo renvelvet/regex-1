@@ -11,10 +11,8 @@ cekKalimat = (string) => {
 buttonCekKalimat.addEventListener("click", () => {
   const kalimat = document.getElementById("kalimat").value;
   if (cekKalimat(kalimat)) {
-    document.querySelector(".cek-kalimat #output").innerHTML =
-      "Hasil pencarian oke";
+    alert(`Oke! Kita cariin "${kalimat}" buat kamu!`);
   } else {
-    document.querySelector(".cek-kalimat #output").innerHTML =
-      "Hasil pencarian not oke";
+    alert("Kata kunci masih salah, bos!");
   }
 });
